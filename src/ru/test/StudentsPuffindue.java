@@ -15,4 +15,5 @@ public class StudentsPuffindue extends Puffindue{
     public void setName(String name) {
         this.name = name;
     }
+
 }

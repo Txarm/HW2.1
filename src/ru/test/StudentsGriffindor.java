@@ -1,8 +1,6 @@
 package ru.test;
 
-import javax.xml.namespace.QName;
-
-public class StudentsGriffindor extends Griffindor{
+public class StudentsGriffindor extends Griffindor {
     private String name;
 
     public StudentsGriffindor(int magic, int transgression, int nobility, int honor, int brave, String name) {

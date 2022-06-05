@@ -50,11 +50,11 @@ public class Service {
         }
     }
 
-    public void bestInHogwarts(StudentsSlizarin student1, StudentsGriffindor student2) {
+    public void bestInHogwarts(Student student1, Student student2) {
         int sum1 = student1.getMagic() + student1.getTransgression();
         int sum2 = student2.getMagic() + student2.getTransgression();
         if (sum1 > sum2) {
-            System.out.println(student1.getName() + " обладает большей мощностью, чем " + student2.getName());
+            System.out.println((student1.getName()) + " обладает большей мощностью, чем " + student2.getName());
         } else if (sum1 < sum2) {
             System.out.println(student2.getName() + " обладает большей мощностью, чем " + student1.getName());
         } else if (sum1 == sum2) {
@@ -62,7 +62,17 @@ public class Service {
         }
     }
 
-    public void printStudent(StudentsGriffindor print) {
+    public void printStudentGriffindor(StudentsGriffindor print) {
         System.out.println(print.getName() + " - магия " + print.getMagic() + ", трансгрессирование " + print.getTransgression() + ", благородство " + print.getNobility() + ", храбрость " + print.getBrave() + ", честь " + print.getHonor());
     }
+    public void printStudentCogtevran(StudentsCogtevran print) {
+        System.out.println(print.getName() + " - магия " + print.getMagic() + ", трансгрессирование " + print.getTransgression() + ", ум " + print.getSmart() + ", мудрость " + print.getWisdom() + ", остроумность " + print.getWitty() + ", творчество " + print.getCreative());
+    }
+    public void printStudentPuffindue(StudentsPuffindue print) {
+        System.out.println(print.getName() + " - магия " + print.getMagic() + ", трансгрессирование " + print.getTransgression() + ", трудолюбие " + print.getIndustrious() + ", верность " + print.getLoyalty() + ", честность " + print.getHonesty());
+    }
+    public void printStudentSlizarin(StudentsSlizarin print) {
+        System.out.println(print.getName() + " - магия " + print.getMagic() + ", трансгрессирование " + print.getTransgression() + ", хитрость " + print.getCunning() + ", решительность " + print.getDetermination() + ", амбициозность " + print.getAmbition() + ", находчивость " + print.getResourcefulness() + ", жажда власти " + print.getLustForPower());
+    }
+
 }

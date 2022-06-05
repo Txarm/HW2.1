@@ -16,13 +16,26 @@ public class Main {
         StudentsCogtevran padmaPatil = new StudentsCogtevran(20, 20, 20, 20, 20, 20, "Padma Patil");
         StudentsCogtevran marcusBelby = new StudentsCogtevran(15, 15, 15, 15, 15, 15, "Marcus Belby");
         Service service = new Service();
-        service.printStudent(garryPotter);
-        service.bestGriffindor(garryPotter,germionaGranger);
-        service.bestCogtevran(zhoyZhang,padmaPatil);
-        service.bestPuffindue(cedrickDiggery,zakariaSmith);
+        service.bestGriffindor(garryPotter, germionaGranger);
+        service.bestCogtevran(zhoyZhang, padmaPatil);
+        service.bestPuffindue(cedrickDiggery, zakariaSmith);
         service.bestSlizarin(gramMontegry, gregoryGoil);
-        service.bestInHogwarts(drakoMalfoe,garryPotter);
-
+        Student studentPotter = new Student(garryPotter.getMagic(), garryPotter.getTransgression(), garryPotter.getName());
+        Student studentGranger = new Student(germionaGranger.getMagic(), germionaGranger.getTransgression(), germionaGranger.getName());
+        Student studentWeasley = new Student(ronWeasley.getMagic(), ronWeasley.getTransgression(), ronWeasley.getName());
+        Student studentMalfoe = new Student(drakoMalfoe.getMagic(), drakoMalfoe.getTransgression(), drakoMalfoe.getName());
+        Student studentMontegry = new Student(gramMontegry.getMagic(), gramMontegry.getTransgression(), gramMontegry.getName());
+        Student studentGoil = new Student(gregoryGoil.getMagic(), gregoryGoil.getTransgression(), gregoryGoil.getName());
+        Student studentSmith = new Student(zakariaSmith.getMagic(), zakariaSmith.getTransgression(), zakariaSmith.getName());
+        Student studentDiggery = new Student(cedrickDiggery.getMagic(), cedrickDiggery.getTransgression(), cedrickDiggery.getName());
+        Student studentFinch = new Student(jastinFinch.getMagic(), jastinFinch.getTransgression(), jastinFinch.getName());
+        Student studentZhang = new Student(zhoyZhang.getMagic(), zhoyZhang.getTransgression(), zhoyZhang.getName());
+        Student studentPatil = new Student(padmaPatil.getMagic(), padmaPatil.getTransgression(), padmaPatil.getName());
+        Student studentBelby = new Student(marcusBelby.getMagic(), marcusBelby.getTransgression(), marcusBelby.getName());
+        service.bestInHogwarts(studentPotter,studentDiggery);
+        service.printStudentGriffindor(garryPotter);
+        service.printStudentCogtevran(zhoyZhang);
+        service.printStudentPuffindue(cedrickDiggery);
+        service.printStudentSlizarin(drakoMalfoe);
     }
-
 }
